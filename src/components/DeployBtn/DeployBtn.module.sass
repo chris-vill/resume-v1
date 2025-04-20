@@ -1,0 +1,20 @@
+a.primary
+  background: #171717
+  color: #ffffff
+  gap: 8px
+
+@media (hover: hover) and (pointer: fine)
+  a.primary:hover
+    background: #383838
+    border-color: transparent
+
+@media (prefers-color-scheme: dark)
+  a.primary
+    background: #ededed
+    color: #0a0a0a
+
+    &:hover
+      background: #cccccc
+
+  .logo
+    filter: invert(1)
